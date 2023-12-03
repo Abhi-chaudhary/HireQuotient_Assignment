@@ -1,0 +1,391 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #fef9f6;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.header
+{
+    background-color:  #fef9f6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+    padding: 1.3rem;
+    padding-left: 2rem;
+    position:fixed;
+    width: 100%;
+    height: 30px;
+    margin-top: -160px;
+    z-index: 3;
+}
+
+.logo_name
+{
+    width: 5.4rem;
+}
+
+.part2
+{
+    display: flex;
+    justify-content: space-between;
+    width: 38%;
+    
+}
+
+.header_link{
+    color: rgba(113, 113, 125, 0.954);
+    font-weight: bolder;
+    font-size:17px;
+}
+
+.part3{
+    margin-right: 2rem;
+}
+
+.login{
+    color: black;
+    background-color: #f1f2f4;
+    border-style: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 13px;
+    margin-right: 0.5rem;
+}
+
+.get_started{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.781);
+    border-style: none;
+    padding: 0.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 13px;
+}
+
+.start_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    width: 60%;
+    margin: auto;
+    margin-top: 10rem;
+    
+}
+pre{
+    margin-top: -0.0rem;
+    font-weight:bolder;
+    font-size: 80px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.817);
+}
+
+.collage
+{
+    display: flex;
+    height: 3rem;
+    align-items: center;
+    line-height: 0.5;
+}
+
+.photo
+{
+    width: 2.4rem;
+    border: 4px solid white;
+    border-radius: 100%;
+}
+
+.non1
+{
+  margin-left: -17px;
+}
+
+.main_features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 11rem;
+    width: 60%;
+    
+}
+.card{
+    display: flex;
+    justify-content: space-between;
+   
+     padding: 3rem;
+    margin-left: 4rem;
+    margin-bottom: 10rem;
+
+}
+.left{
+    width: 40%;
+    
+    
+}
+.right{
+    width: 40%;
+    margin-left: 10rem;
+}
+
+.comments{
+    margin-top: 2.5rem;
+    display: flex;
+    height: 6.5rem;
+}
+
+.review_card{
+    background-color: rgb(255, 255, 255);
+    width: 30rem;
+    padding: 1.1rem;
+    
+    border: 0.5px solid rgba(0, 0, 0, 0.082);
+    border-radius: 20px;
+    animation: moveSlideshow 5s linear infinite alternate;
+    margin-left: 3rem;
+    margin-top: 4rem;
+}
+@keyframes moveSlideshow {
+    0% {
+        transform:translateX(-10px);
+    }
+    
+    100% { 
+        transform:translateX(100px);
+    }
+
+
+  }
+
+  .review_card2
+  {
+    background-color: rgb(255, 255, 255);
+    width: 30rem;
+    padding: 1.1rem;
+    
+    border: 0.5px solid rgba(0, 0, 0, 0.082);
+    border-radius: 20px;
+    animation: moveSlideshow2 8s linear infinite alternate;
+    margin-left: 3rem;
+  }
+
+  @keyframes moveSlideshow2 {
+    0% {
+        transform:translateX(-14px);
+    }
+    
+    100% { 
+        transform:translateX(100px);
+    }
+  }
+
+  .review_card3
+  {
+    background-color: rgb(255, 255, 255);
+    width: 30rem;
+    padding: 1.1rem;
+    
+    border: 0.5px solid rgba(0, 0, 0, 0.082);
+    border-radius: 20px;
+    animation: moveSlideshow3 9s linear infinite alternate;
+    margin-left: 3rem;
+  }
+
+  @keyframes moveSlideshow3 {
+    0% {
+        transform:translateX(-18px);
+    }
+    
+    100% { 
+        transform:translateX(100px);
+    }
+  }
+
+
+  #app-cover {
+    display: table;
+    width: 600px;
+    margin: 80px auto;
+    counter-reset: button-counter;
+  }
+  
+  .row {
+    display: table-row;
+  }
+  
+  .toggle-button-cover {
+    display: table-cell;
+    position: relative;
+    width: 200px;
+    height: 140px;
+    box-sizing: border-box;
+  }
+  
+  .button-cover {
+    height: 100px;
+    margin: 20px;
+    background-color: #fef9f6;
+    
+    border-radius: 4px;
+  }
+  
+  .button-cover:before {
+    counter-increment: button-counter;
+    content: counter(button-counter);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: black;
+    font-size: 12px;
+    line-height: 1;
+    padding: 5px;
+  }
+  
+  .button-cover,
+  .knobs,
+  .layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .button {
+    position: relative;
+    top: 50%;
+    width: 74px;
+    height: 36px;
+    margin: -20px auto 0 auto;
+    overflow: hidden;
+  }
+  
+  .button.r,
+  .button.r .layer {
+    border-radius: 100px;
+  }
+  
+  .button.b2 {
+    border-radius: 2px;
+  }
+  
+  .checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  .knobs {
+    z-index: 2;
+  }
+  
+  .layer {
+    width: 100%;
+    background-color: grey;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+
+  #button-10 .knobs:before,
+#button-10 .knobs:after,
+#button-10 .knobs span {
+  position: absolute;
+  top: 4px;
+  width: 20px;
+  height: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  border-radius: 2px;
+  transition: 0.3s ease all;
+}
+
+#button-10 .knobs:before {
+  content: "";
+  left: 4px;
+  background-color: white;
+}
+
+#button-10 .knobs:after {
+  content: "NO";
+  right: 4px;
+  color: #4e4e4e;
+}
+
+#button-10 .knobs span {
+  display: inline-block;
+  left: 4px;
+  color: black;
+  z-index: 1;
+}
+
+#button-10 .checkbox:checked + .knobs span {
+  color: black;
+}
+
+#button-10 .checkbox:checked + .knobs:before {
+  left: 42px;
+  background-color: white;
+}
+
+#button-10 .checkbox:checked + .knobs:after {
+  color: black;
+}
+
+#button-10 .checkbox:checked ~ .layer {
+  background-color: grey;
+}
+
+.plan_card{
+  background-color: white;
+  padding: 2.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tick-list li {
+  background: url('assets/tick-sign.PNG') no-repeat left center; 
+  background-size: 40px; 
+  padding-left: 50px; 
+  margin-bottom: 10px; 
+}
+.question_card{
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+   border-radius: 15px;
+   border: 2px solid rgba(0, 0, 0, 0.094);
+}
+
+.footer{
+  background-color: #f1f2f4;
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  height: 30rem;
+}
+li{
+  color: #4e4e4e;
+}
